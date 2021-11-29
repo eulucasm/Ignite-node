@@ -1,10 +1,10 @@
-
 <h1 align="center"> FinApi - Financeia</h1>
 <hr/>
 
--Projeto referente ao primeiro modulo do curso Node da Rocketseat
+- Projeto referente ao primeiro modulo do curso Node da Rocketseat
 
 **Requisitos**
+
 - [] Deve ser possível criar umma conta
 - [] Deve ser possível buscar o extrato bancário do cliente
 - [] Deve ser possível realizar um depósito
@@ -15,6 +15,7 @@
 - [] Deve ser possível deletar uma conta
 
 **Regras de negócio**
+
 - [] Não deve ser possível cadastrar uma conta com CPF já existente
 - [] Não deve ser possível fazer depósito em uma conta não existente
 - [] Não deve ser possível buscar extrato em uma conta não existente

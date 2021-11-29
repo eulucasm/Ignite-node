@@ -11,3 +11,15 @@ POST - Inserir uma informação no servidor
 PUT - Alterar uma informação no servidor
 PATCH - Alterar uma informação especifica no servidor
 DELETE - Deletar uma informação no servidor
+
+
+Tipo de paramostros que podemos receber:
+
+- Route Params => identificar um recurso para poder editar/deletar/buscar o recurso.
+
+- Query Params => paginação, filtro, ordenação.
+os query params são passados na url, e são opcionais.
+exemplo de url com query params: http://localhost:3333/users?page=2&nome=Diego 
+(O que vem depois de ? é o query params)
+
+- Body Params => Os objetos passados para inserção/alteração/deleção. (JSON)

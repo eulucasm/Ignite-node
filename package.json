@@ -5,7 +5,7 @@
   "repository": "https://github.com/eulucasm/Ignite-node.git",
   "author": "eulucasm <lucaspoletis@gmail.com>",
   "license": "MIT",
-  "scripts":{
+  "scripts": {
     "dev": "nodemon src/index.js"
   },
   "dependencies": {
