@@ -1,0 +1,22 @@
+Aula 2 -> Conceitos de API
+
+** O que é uma API? -> Application Programming Interface(interface de programação de aplicações)
+* Conjunto de especificações de possiveis interações entre aplicações
+* Documentação para desenvolvedor
+
+** O que é REST? -> Representational State Transfer(Transferência Representacional de Estado)
+* Modelo de arquitetura de aplicações
+* 6 Regras:
+-> Client-server: cliente envia requisição para o servidor e o servidor retorna uma resposta sem um conhecer
+o trabalho do outro.
+-> Stateless: não armazena estado, ou seja, não armazena informações do usuário.
+-> cache: precisamos de alguma forma, garantir que nossa aplicação tenha suporte ao cache
+-> Interface Uniforme:
+   -> identificação dos recursos
+      - exemplo: http://enderecodoservidor.com.br/produtos
+                 http://enderecodoservidor.com.br/clientes
+   ->Representação dos recursos
+   ->Mensagens auto-descritivas
+   ->HATEOS: (Hypermedia as the Engine of Application State) Retorno de links
+-> Criação em camadas
+-> Codigo sobre demanda

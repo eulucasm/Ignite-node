@@ -1,0 +1,25 @@
+Aula 1 -> O que é o node?
+
+* O que é o node? -> plataforma opensource que permite executar JS do lado do servidor.
+v8(interpretador JS) + libuv(biblioteca multiplataforma assincrona) + conjunto de modulos
+
+* Oque o node veio resolver? -> criado por Rayan Dahl -> criado para resolver problemas de I/O
+
+* O node é baseado em eventos? -> sim
+arquitetura Event Loop -> ciclo de eventos -> processa eventos em ordem
+call stack
+O node é Single - Thread.
+O node é non-blocking I/O. podemos chamar diversas funções assincronas de uma vez.
+O node Possui varios modulos proprios. (http, dns, fs, buffer, crypto, etc)
+
+* Event-Loop(pq o node é tão poderoso?) 
+
+* Gerenciadores de pacotes -> NPM e Yarn
+usados para instalar bibliotecas externas
+podemos até mesmo disponibilizar uma biblioteca propria para o node.
+
+*Frameworks
+- express -> framework para criar aplicações web
+- egg.JS
+- nest.JS
+- adonis.JS
