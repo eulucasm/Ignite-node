@@ -1,0 +1,87 @@
+Aula 3 -> Metodos de requisição -> http verbs
+
+GET -> Leitura, busca, listagem
+POST -> Criação, inserção
+PUT -> Alteração, atualização
+DELETE -> Remoção, exclusão
+PATCH -> Alteração parcial
+
+** HTTP Codes
+
+1xx -> informativo: a solicitação foi aceita ou o processo continua em andamento;
+
+2xx -> sucesso: confirmação
+      200 - Requisição bem sucedida
+      201 - Criado com sucesso(geralemente usado pelo POST após uma inserção)
+
+3xx -> redirecionamento:
+      301 - movido permanentemente
+      302 - movido temporariamente
+      303 - See Other
+      304 - Not Modified
+      305 - Use Proxy
+      307 - Temporary Redirect
+
+4xx -> erro do cliente:
+      400 - Bad Request
+      401 - Unauthorized
+      403 - Forbidden
+      404 - Not Found
+      405 - Method Not Allowed
+      406 - Not Acceptable
+      408 - Request Timeout
+      409 - Conflict
+      410 - Gone
+      411 - Length Required
+      412 - Precondition Failed
+      413 - Request Entity Too Large
+      414 - Request-URI Too Long
+      415 - Unsupported Media Type
+      416 - Requested Range Not Satisfiable
+      417 - Expectation Failed
+
+5xx -> erro no servidor:
+      500 - Internal Server Error
+      501 - Not Implemented
+      502 - Bad Gateway
+      503 - Service Unavailable
+      504 - Gateway Timeout
+      505 - HTTP Version Not Supported
+
+** Parametros das requisição
+- Headers Params -> informações que são enviadas pelo cliente
+
+- Query Params -> parametros nomeados enviados na rota após o sinal de "?" (filtros, paginação)
+ - http://enereçodoservior.com.br/v1/users?page=2&limite=50 onde:
+      page = chave do parametro
+      2 = valor do parametro
+      & = separação entre parametros
+
+- Route Params
+   - http://enereçodoservior.com.br/v1/users/${id} onde:
+      id = chave do parametro
+      ${id} = valor do parametro
+
+- Body Params -> informações que são enviadas no corpo da requisição
+exemplo:
+{
+   "name": "Diego",
+   "username": "diogo123"
+}
+
+** Boas praticas API Request
+
+- A utilização correta dos métodos HTTP
+- A utilização correta dos status no retorno das respostas
+- Padroes de nomenclatura
+   - Busca de usuarios -> GET
+      - http://enereçodoservior.com.br/v1/users
+   - Busca de usuario por id -> GET
+      - http://enereçodoservior.com.br/v1/users/${id}
+   -busca do endereço do usuario -> GET
+      - http://enereçodoservior.com.br/v1/users/${id}/address
+   -deleção de um usuario -> DELETE
+      - http://enereçodoservior.com.br/v1/users/${id}
+   Atualização do status um usuario - PATCH
+      - http://enereçodoservior.com.br/v1/users/${id}/status
+
