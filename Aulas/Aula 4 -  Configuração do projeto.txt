@@ -1,0 +1,13 @@
+** Após a iniciar nosso projeto dentro de uma pasta a escolha, utilizando o comando yarn add
+
+- instalamos o express usando yarn add express.
+- instalamos também o nodemon para que o servidor rode automaticamente ao iniciar o projeto.
+- configuramos nosso servidor para que ele rode na porta 3333 e configuramos o nodemon.
+
+Algumas Rotas que vamos utilizar:
+
+GET - Buscar uma informação dentro do servidor.
+POST - Inserir uma informação no servidor
+PUT - Alterar uma informação no servidor
+PATCH - Alterar uma informação especifica no servidor
+DELETE - Deletar uma informação no servidor
