@@ -2,6 +2,8 @@
 <h1 align="center"> FinApi - Financeia</h1>
 <hr/>
 
+-Projeto referente ao primeiro modulo do curso Node da Rocketseat
+
 **Requisitos**
 - [] Deve ser possível criar umma conta
 - [] Deve ser possível buscar o extrato bancário do cliente
